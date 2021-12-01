@@ -1,29 +1,64 @@
 <!DOCTYPE html>
 <html>
+	<!-- TODO: get string from html and use it in c++ code, return the output to javascript and then display it on web page" -->
 	<head>
 		<meta charset = "UTF-8">
 		<meta name ="description" content ="Solves word search puzzles">
 		<meta name ="author" content = "Anthony Nguyen">
 		<meta name ="keywords" content = "wordsearch, word search, solver">
-		<meta name ="viewport" content = "width=device-width, initial-scale = 1.0"
-		<title> WordSearch Solver </title>
+		<meta name ="viewport" content = "width=device-width, initial-scale = 1.0">
+		
+		<style>
+			a:link {
+  				color: red;
+  				background-color: transparent;
+  				text-decoration: none;
+			}
+			a:visited {
+  				color: red;
+  				background-color: transparent;
+  				text-decoration: none;
+			}
+			a:hover {
+  				color: lightblue;
+  				background-color: transparent;
+  				text-decoration: none;
+			}
+			a:active {
+  				color: lightblue;
+  				background-color: transparent;
+  				text-decoration: none;
+			}
+		</style>
+
+		<a href = "file:///C:/Users/anguy/OneDrive/Documents/html%20learn/wordSearchWebsite.html">
+				<h1>WordSearch Solver</h1>
+		</a>
+
+
+		<script type = "text/javascript">
+			function displayInput(){
+			alert("value of row is: " + document.getElementById("row").value + "\nvalue of col is: " + document.getElementById("col").value + "\nwordSearch puzzle in row major order is: \n" +document.getElementById("wordSearch").value);
+
+			}
+		</script>
+		<hr>
 	</head>
 	<body style = "background-color:#FAEBD7">
 		<header>
-			<h1 style= "color :red"> Wordsearch Solver </h1>
-			<hr>
 
 		</header>
 		<main>
 			<section>
 				<p> Enter the number of rows </p>
-				<input type="text" value = "0"/>
+				<input id = "row" type="text" placeholder= "0"/>					
 				<p> Enter the number of columns</p>
-				<input type="text" value = "0"/>
+				<input id = "col" type="text" placeholder= "0"/>
 				<p> Enter a the wordsearch by row major order or upload a file: </p>
-				<textarea row = 200 cols = 150>
+				<textarea id = "wordSearch" row = 200 cols = 150>
 </textarea row = 200 cols = 200>
 				<input type="file">
+				<button onclick="displayInput()" id = "buttonForGetRow">submit!</button>
 				<br><br>
 				<hr>
 			</section>
@@ -39,4 +74,4 @@
 
 
 
-</html>
+</html> 
