@@ -139,12 +139,19 @@ class toStore{
         return toReturn;
     }
 }
-var Dictionary =[];
+var Dictionary = JSON.parse(words);
 function findLargestWord(dictionary){
-
+    var min = 0;
+for(var z = 0; z < Dictionary["words"].length; z++){
+    if(Dictionary.words[z].length > min){
+        min = Dictionary.words[z].length; 
+    }
+}
+console.log(min);
 }
 
 function getWordInPuzzle(indexRow , indexCol, dir, len, numRows, numCols){
 
 }
 
+findLargestWord(Dictionary);
