@@ -139,7 +139,8 @@ class toStore{
         return toReturn;
     }
 }
-var Dictionary = JSON.parse(words);
+const data = require('./words.json');
+var Dictionary = JSON.parse(JSON.stringify(data));
 function findLargestWord(dictionary){
     var min = 0;
 for(var z = 0; z < Dictionary["words"].length; z++){
@@ -147,11 +148,9 @@ for(var z = 0; z < Dictionary["words"].length; z++){
         min = Dictionary.words[z].length; 
     }
 }
-console.log(min);
+return min;
 }
 
 function getWordInPuzzle(indexRow , indexCol, dir, len, numRows, numCols){
 
 }
-
-findLargestWord(Dictionary);
