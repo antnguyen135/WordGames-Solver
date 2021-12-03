@@ -36,12 +36,7 @@
 		</a>
 
 
-		<script type = "text/javascript">
-			function displayInput(){
-			alert("value of row is: " + document.getElementById("row").value + "\nvalue of col is: " + document.getElementById("col").value + "\nwordSearch puzzle in row major order is: \n" +document.getElementById("wordSearch").value);
-
-			}
-		</script>
+		<script src = "wordSearchFunctions.js"></script>
 		<hr>
 	</head>
 	<body style = "background-color:#FAEBD7">
@@ -55,17 +50,16 @@
 				<p> Enter the number of columns</p>
 				<input id = "col" type="text" placeholder= "0"/>
 				<p> Enter a the wordsearch by row major order or upload a file: </p>
-				<textarea id = "wordSearch" row = 200 cols = 150>
+				<textarea id = "wordSearchPuzz" row = 200 cols = 150>
 </textarea row = 200 cols = 200>
 				<input type="file">
-				<button onclick="displayInput()" id = "buttonForGetRow">submit!</button>
+				<button onclick="displayResult();displayFunction();displayCrossWord();" id = "buttonForGetRow">submit!</button>
 				<br><br>
 				<hr>
 			</section>
 			<section>
-				<h2 style ="color:blue"> Results </h2>
+				<div id = "main"></div>
 				<br><br>
-				<hr>
 			</section>
 		</main>
 		<footer>
