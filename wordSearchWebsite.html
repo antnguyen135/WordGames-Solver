@@ -49,12 +49,15 @@
 				<input id = "row" type="text" placeholder= "0"/>					
 				<p> Enter the number of columns</p>
 				<input id = "col" type="text" placeholder= "0"/>
+				<p> Enter the words to find or leave blank to find all words possible </p>
+				<textarea id = "wordBank" rows = 5 cols = 30>
+</textarea>
 				<p> Enter a the wordsearch by row major order or upload a file (spaces, commas, and new line allowed): </p>
 				<textarea id = "wordSearchPuzz" rows = 20 cols = 150>
 </textarea>
 				<br>
 				<input type="file">
-				<button onclick="displayCrossWord();answerToWordSearch();" id = "buttonForGetRow">submit!</button>
+				<button onclick="displayCrossWord();addPersonalDictionary();answerToWordSearch();" id = "buttonForGetRow">submit!</button>
 				<button onclick="clearDisplay();" id = "buttonToClearScreen">clear board!</button>
 				<br><br>
 				<hr>
