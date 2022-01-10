@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<!-- TODO: get string from html and use it in c++ code, return the output to javascript and then display it on web page" -->
+	<head>
+		<meta charset = "UTF-8">
+		<meta name ="description" content ="Solves word search puzzles">
+		<meta name ="author" content = "Anthony Nguyen">
+		<meta name ="keywords" content = "wordsearch, word search, solver">
+		<meta name ="viewport" content = "width=device-width, initial-scale = 1.0">
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<a href = "http://anthonywordsearchsolver.com/">
+				<h1 id="title">WordSearch Solver</h1>
+		</a>
+
+		<script type ="text/javascript" src = "words.json"></script>
+		<script src = "wordSearchFunctions.js"></script>
+		<hr>
+	</head>
+	<body>
+		<header>
+
+		</header>
+		<main>
+			<section>
+				<p class="texts"> Enter the number of rows </p>
+				<input id = "row" type="text" placeholder= "0"/>					
+				<p class="texts"> Enter the number of columns</p>
+				<input id = "col" type="text" placeholder= "0"/>
+				<p class="texts"> Enter the words to find or leave blank to find all words possible </p>
+				<textarea id = "wordBank" rows = 10 cols = 100>
+</textarea>
+				<p class="texts"> Enter a the wordsearch by row major order or upload a file (spaces, commas, and new line allowed): </p>
+				<textarea id = "wordSearchPuzz" rows = 20 cols = 150>
+</textarea>
+				<br>
+				<button onclick="displayCrossWord();addPersonalDictionary();answerToWordSearch();" id = "buttonForGetRow" class = "button">submit!</button>
+				<button onclick="clearDisplay();" id = "buttonToClearScreen" class = "button">clear board!</button>
+				<br><br>
+				<hr>
+			</section>
+			<section>
+				<div id = "main"></div>
+				<br><br>
+			</section>
+		</main>
+		<footer>
+		</footer>
+	</body>
+
+
+
+</html> 
