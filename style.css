@@ -1,0 +1,133 @@
+a:link {
+    color: #f5726b;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: #f5726b;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(96, 197, 231);
+    background-color: transparent;
+    text-decoration: none;
+}
+a:active {
+    color: rgb(96, 197, 231);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+body{
+    /*background-color:#FAEBD7;*/
+    background: linear-gradient(#ddd6f3, #faaca8);
+    min-height: 100vh;
+}
+.button {
+  color: #3732CD;
+  border: 2px solid #1a8cff;
+  border-radius: 25px;
+  padding: 5px 10px;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #D80286;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+  background : #66b3ff;
+}
+.button:hover{
+    color:  #991f00;
+    border: 2px solid lightskyblue;
+    border-radius: 25px;
+    padding: 5px 10px;
+    display: inline-block;
+    font-family: "Times New Roman", Monaco, monospace;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #D80286;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+    background : lightblue;
+}
+hr{
+    height: 1px;
+    background-color: rgb(194, 190, 190);
+    border: none;
+    border-radius: 1px;
+}
+p.texts {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size : 25px;
+    color :  #004080;
+    text-shadow: 1px 1px 1px rgb(185, 184, 184);
+    margin-bottom:5px;
+}
+
+#title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    margin-top:15px;
+    margin-bottom: 15px;
+}
+
+input[type=text] {
+    padding: 0;
+    height: 30px;
+    position: relative;
+    left: 0;
+    outline: none;
+    border: 1px solid #cdcdcd;
+    border-color: rgba(0, 0, 0, .15);
+    background-color: white;
+    font-size: 16px;
+    margin-top:0;
+  }
+ textarea {
+    border: 1px solid #cdcdcd;
+    border-color: rgba(0, 0, 0, .15);
+    background-color: white;
+    font-size: 16px;
+    position: relative;
+    width: 75%;
+    height : 150px;
+    left: 0;
+    outline: none;
+    padding: 0;
+  }
+  #wordSearchPuzz{
+      height : 300px;
+  }
+  .child {
+    width: 50%;
+    float: left;
+}  
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
