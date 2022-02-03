@@ -1,5 +1,0 @@
-problems encountered:
-text box : learned textbox syntax in html
-how to get input : learned javascript syntax for getting input
-how to dynamically create a new box based on position: javascript method for creating and appending new body
-how to make it so a function will only execute once: make function a variable instead
