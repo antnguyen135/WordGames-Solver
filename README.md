@@ -10,10 +10,10 @@ Below is example of a word hunt grid and a word being found in a different grid 
 # Description
 This web application is a solver for both word search and word hunt <br />
 Upon entering the website, users are greeted with the following home page  <br />
-<img src = "images/WS-homepage.png" width="250">
+<img src = "images/WS-homepage.png" width="500">
 # Examples
 This is a 14x14 word search with a custom dictionary being solved <br />
- <img src = "images/WS-solved.png" width="250">
+ <img src = "images/WS-solved.png" width="500">
  
  This is a word hunt game being solved <br />
- <img src = "images/WH-solve.png" width="250">
+ <img src = "images/WH-solve.png" width="500">
