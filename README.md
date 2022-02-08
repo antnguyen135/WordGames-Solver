@@ -13,7 +13,7 @@ Upon entering the website, users are greeted with the following home page  <br /
 <img src = "images/WS-homepage.png" width="500">
 # Examples
 This is a 14x14 word search with a custom dictionary being solved <br />
- <img src = "images/WS-solved.png" width="500">
+ <img src = "images/WS-solved.png" width="1000">
  
  This is a word hunt game being solved <br />
- <img src = "images/WH-solve.png" width="500">
+ <img src = "images/WH-solve.png" width="1000">
